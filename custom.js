@@ -24,12 +24,10 @@ $("#creditswitch").click(function () {
 $(document).ready(function () {
   if (localStorage.getItem("method") == "credit") {
     $(".credit-block").show();
-    console.log("credit");
   } else if (localStorage.getItem("method") == "wire") {
     $(".wire-block").show();
-    console.log("wire");
   } else {
-    console.log("nothing");
+    // left blank intentionally
   }
 });
 
