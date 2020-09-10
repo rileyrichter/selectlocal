@@ -18,3 +18,14 @@ $(document).ready(function () {
     console.log("nothing");
   }
 });
+
+// select redirect
+$(function () {
+  $("#state").on("change", function () {
+    var url = $(this).val();
+    if (url) {
+      window.location = url;
+    }
+    return false;
+  });
+});
